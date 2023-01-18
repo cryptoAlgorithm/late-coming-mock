@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us" style="max-width:100%;overflow-x:hidden">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>School Portal</title>
+    <meta name="description" content="School Portal for staff, students, parents, alumni and prospective students">
+    <meta name="author" content="NUS High School of Math and Science, Singapore">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://cdn.avero-tech.com/nus/img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen,print" href="avero.20170409.min.css">
+    <link rel="stylesheet" type="text/css" media="screen,print" href="custom.20161235.css">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.avero-tech.com/nus/img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://cdn.avero-tech.com/nus/img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.avero-tech.com/nus/img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.avero-tech.com/nus/img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.avero-tech.com/nus/img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://cdn.avero-tech.com/nus/img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.avero-tech.com/nus/img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://cdn.avero-tech.com/nus/img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.avero-tech.com/nus/img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://cdn.avero-tech.com/nus/img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.avero-tech.com/nus/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://cdn.avero-tech.com/nus/img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.avero-tech.com/nus/img/icon/favicon-16x16.png">
+</head>
+<body style="padding:20px;padding-top:5px" class="mobile-detected needsclick">
+<img id="logo" src="https://cdn.avero-tech.com/nus/img/logo.png">
+<section style="padding-top:10px">
+    <div class="row">
+        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="alert alert-success">
+                <p style="font-size: 16px;font-weight: 700;">
+                    Please show this page to the Student Affairs officer / Student Council
+                </p>
+                <p style="font-size: 16px; font-weight: 700;">
+                    Dear Student Affairs officer / Student Council, this student has submitted the late-coming form.
+                    Thank you.
+                </p>
+                <p style="font-size: 16px; font-weight: 700; color: #00f" id="name"></p>
+                <p style="font-size: 16px; font-weight: 700; color: #00f" id="date"></p>
+                <p style="font-size: 16px; font-weight: 700; color: #00f" id="time"></font></p></div>
+            <div class="jarviswidget ui-form-root ui-element">
+                <header><h2 style="width:100%"><strong class="form_title">Student Late-Coming Self Report Form</strong>
+                </h2></header>
+                <div role="content">
+                    <div class="widget-body">
+                        <div class="ui-form-content">
+                            <form class="form-horizontal ui-form" role="form" novalidate="novalidate">
+                                <div class="row ui-form-row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <div class="alert alert-info" role="alert"><span>Once you have completed and submitted this form, please present the output from this page to the Student Affairs Officer / Student Council. Thank you</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ui-form-row">
+                                    <div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary">Student
+                                        ID&nbsp;*
+                                    </div>
+                                    <div class="col-xs-9 col-sm-9 col-md-10"
+                                         style="position: relative;">
+                                        <input type="text" id="studentID" class="form-control valid"
+                                               placeholder="e.g. H1510001" disabled>
+                                        <label for="studentID" class="error" style="display: none;"></label>
+                                    </div>
+                                </div>
+                                <div class="row ui-form-row">
+                                    <div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary">NRIC /
+                                        FIN&nbsp;*
+                                    </div>
+                                    <div class="col-xs-9 col-sm-9 col-md-10" style="position: relative;">
+                                        <input type="text" id="ic" class="form-control valid"
+                                               placeholder="Last 5 characters only" disabled>
+                                        <span class="font-xs text-success">
+                                            Example: if your NRIC/ FIN is T1234567H, enter 4567H
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row ui-form-row">
+                                    <div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary">Reason for late
+                                        coming
+                                    </div>
+                                    <div class="col-xs-9 col-sm-9 col-md-10" style="position: relative;">
+                                        <input type="text" class="form-control valid"
+                                               placeholder="Valid reason only" disabled>
+                                        <span class="font-xs text-success">
+                                            Please key in reason for coming late to school
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="ui-form-footer widget-footer padding-10 text-center">
+                            <button type="button" class="btn btn-primary ui-form-submit" disabled=>
+                                <i class="fa fa-check"></i>
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<script>
+    const $ = id => document.getElementById(id)
+    // 18 January 2023
+    $('date').textContent = new Date().toLocaleDateString('en-GB', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+    // 07:48 AM
+    $('time').textContent = new Date().toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+    });
+
+    const params = new URLSearchParams(window.location.search)
+    const name = params.get('name').toUpperCase()
+    const ic = params.get('ic')
+    const studentID = params.get('studentID').toLowerCase()
+    $('name').textContent = name
+    $('ic').value = ic
+    $('studentID').value = studentID
+</script>
+</body>
+</html>
